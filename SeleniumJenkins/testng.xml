@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="JenkinsHTD.SeleniumJenkins.GoogleTests"/>
+      <class name="JenkinsHTD.SeleniumJenkins.AssertSelenium"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
