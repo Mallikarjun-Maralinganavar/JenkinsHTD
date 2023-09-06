@@ -5,8 +5,7 @@
     <classes>
       <class name="JenkinsHTD.SeleniumJenkins.AssertSelenium">
         <methods>
-          <include name="close"/>
-          <include name="f1"/>
+          <include name="f"/>
         </methods>
       </class> <!-- JenkinsHTD.SeleniumJenkins.AssertSelenium -->
     </classes>

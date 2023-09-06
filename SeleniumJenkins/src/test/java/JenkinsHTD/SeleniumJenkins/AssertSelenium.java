@@ -20,17 +20,11 @@ public class AssertSelenium {
 	WebDriver driver;
   @Test
   public void f() {
-	  driver = new EdgeDriver();
+	  driver = new ChromeDriver();
 	  driver.get("https://www.bing.com/");
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-	  driver.findElement(By.xpath("//*[@id=\"sb_form_q\"]")).sendKeys("Selenium",Keys.ENTER);
-	  
-	 
-  }
-  @Test 
-  public void f1() {
-	  //System.out.println(title);
+	  driver.findElement(By.name("q")).sendKeys("Selenium",Keys.ENTER);
 	  Assert.assertEquals(driver.getTitle(), "Selenium - Search");
   }
 }
