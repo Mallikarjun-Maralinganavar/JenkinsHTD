@@ -9,8 +9,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
+
+import com.beust.ah.A;
 
 public class AssertSelenium {
 	WebDriver driver;
@@ -26,12 +30,7 @@ public class AssertSelenium {
   }
   @Test 
   public void f1() {
-	  String tital = driver.getTitle();
-	  //System.out.println(tital);
-	  assertEquals("tital", "Selenium - Search");
-  }
-  @AfterMethod
-  public void close() {
-	  driver.quit();
+	  //System.out.println(title);
+	  Assert.assertEquals(driver.getTitle(), "Selenium - Search");
   }
 }
