@@ -14,10 +14,11 @@ public class AssertSelenium {
   @Test
   public void f() {
 	  driver = new ChromeDriver();
-	  driver.get("https://www.bing.com/");
+	  driver.get("https://www.Google.com/");
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	  driver.findElement(By.name("q")).sendKeys("Selenium",Keys.ENTER);
-	  Assert.assertEquals(driver.getTitle(), "Selenium - Search");
+	  System.out.println(driver.getTitle());
+	  Assert.assertEquals(driver.getTitle(), "Selenium - Google Search");
   }
 }
